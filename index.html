@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imran Shafique | Solution Architect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        #home {
+            height: 100vh;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        #home h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        #home p { font-size: 1.2rem; margin-bottom: 20px; max-width: 800px; }
+
+        .btn-download {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-download:hover { background: #2980b9; }
+
+        /* General Section Styling */
+        section { padding: 80px 10%; }
+        h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: var(--primary-color); }
+
+        /* About Section */
+        #about { background: var(--light-bg); }
+        #about p { font-size: 1.1rem; text-align: justify; max-width: 900px; margin: 0 auto; color: #555; }
+
+        /* Resume Section */
+        .resume-container { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+        .skills-card { background: var(--white); padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .skills-card h3 { margin-bottom: 15px; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; }
+        .skill-item { margin-bottom: 10px; font-size: 0.9rem; }
+
+        .experience-item { margin-bottom: 30px; position: relative; padding-left: 20px; border-left: 3px solid var(--accent-color); }
+        .experience-item h3 { color: var(--primary-color); }
+        .date { font-weight: bold; color: var(--accent-color); margin-bottom: 10px; display: block; }
+        .experience-item ul { margin-left: 20px; }
+
+        /* Contact/Footer */
+        footer { background: var(--primary-color); color: var(--white); text-align: center; padding: 40px 0; }
+        .contact-info { margin-bottom: 20px; }
+        .contact-info span { margin: 0 15px; }
+
+        @media (max-width: 768px) {
+            .resume-container { grid-template-columns: 1fr; }
+            nav ul { display: none; }
+            #home h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">IMRAN SHAFIQUE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+        <a href="#" class="btn-download"><i class="fas fa-download"></i> Download CV</a>
+    </nav>
+
+    <section id="home">
+        <h1>Imran Shafique</h1>
+        <p>Solution Architect | Full Stack Developer | webMethods Integration Developer</p>
+        [cite_start]<p>Result-driven professional with comprehensive experience in delivering large-scale technology projects. [cite: 3, 4]</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            A determined and forward-thinking Solutions Architect with 12+ years of experience, working across a wide range of industries, 
+            from financial institutes to government entities. Proactive and adaptable, specializing in Blockchain technology and SaaS across 
+            multiple platforms; with a strong understanding and deep practical experience in developing sustainable, secure and long-lasting 
+            business applications. Developed applications and provided tangible and measurable results for clients; from process automation, 
+            accessibility, integration, scalability, security and availability. With a wide portfolio of developing innovative solutions through advanced architectures.
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume-container">
+            <div class="sidebar">
+                <div class="skills-card">
+                    <h3>Technical Skills</h3>
+                    [cite_start]<div class="skill-item"><strong>Tech Stack:</strong> .Net/.NetCore, MVC, Angular, C#, Python [cite: 12]</div>
+                    [cite_start]<div class="skill-item"><strong>Database:</strong> Oracle, SQL Server, PostgreSQL [cite: 12]</div>
+                    [cite_start]<div class="skill-item"><strong>API/Integration:</strong> webMethods, SOAP, REST [cite: 12, 32]</div>
+                    [cite_start]<div class="skill-item"><strong>BPM:</strong> Appian [cite: 12]</div>
+                    [cite_start]<div class="skill-item"><strong>Cloud:</strong> Microsoft Azure [cite: 12]</div>
+                </div>
+                <br>
+                <div class="skills-card">
+                    <h3>Education</h3>
+                    <div class="skill-item"><strong>BSc. (Hons) [cite_start]Computing</strong><br>University of Huddersfield, UK [cite: 72]</div>
+                    [cite_start]<div class="skill-item"><strong>SCRUM Certified (SFC)</strong><br>2019 [cite: 72]</div>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience-item">
+                    [cite_start]<span class="date">Jan 2018 - Present [cite: 15]</span>
+                    <h3>Sr. Application Developer</h3>
+                    [cite_start]<p><strong>Bayan Credit Bureau, Riyadh - KSA</strong> [cite: 14]</p>
+                    <ul>
+                        [cite_start]<li>Converted core middleware service and API products to webMethods services. [cite: 22]</li>
+                        [cite_start]<li>Engineered CI/CD of all running projects using Azure DevOps Server. [cite: 23]</li>
+                        [cite_start]<li>Implemented major enterprise integration with public and private organizations. [cite: 24]</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    [cite_start]<span class="date">Sept 2010 - Dec 2017 [cite: 38]</span>
+                    <h3>Sr. Software Engineer</h3>
+                    [cite_start]<p><strong>Al-Sorayai Industrial & Trading Group, Jeddah</strong> [cite: 37]</p>
+                    <ul>
+                        [cite_start]<li>Delivered a mission critical MRP solution for textile products. [cite: 40, 43]</li>
+                        [cite_start]<li>Developed B2B payment solutions integrated with Oracle financials. [cite: 48]</li>
+                        [cite_start]<li>Integrated third-party hardware including biometric devices. [cite: 47]</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    [cite_start]<span class="date">Jul 2008 - Aug 2010 [cite: 53]</span>
+                    <h3>Senior Software Engineer / .NET Team Lead</h3>
+                    [cite_start]<p><strong>Iciltek, Karachi</strong> [cite: 51]</p>
+                    <ul>
+                        [cite_start]<li>Led a team in development of Point of Sales and ERP solutions for SMEs. [cite: 60]</li>
+                        [cite_start]<li>Translated business requirements into technical product specifications. [cite: 62]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            [cite_start]<span><i class="fas fa-envelope"></i> shafique.imran@gmail.com [cite: 2]</span>
+            [cite_start]<span><i class="fas fa-phone"></i> +966 535-619232 [cite: 2]</span>
+            [cite_start]<span><i class="fas fa-map-marker-alt"></i> Riyadh, KSA [cite: 2]</span>
+        </div>
+        <p>&copy; 2024 Imran Shafique. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
