@@ -90,6 +90,76 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+    /* Hero text scaling */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .typing-text {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Reduce shape sizes for mobile */
+    .shape-1, .shape-2, .shape-3 {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+
+    /* Skills section spacing */
+    #skills ul {
+        padding-left: 20px;
+    }
+
+    /* Project cards */
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+@media print {
+
+    /* Hide navigation and buttons */
+    nav, footer, .btn, .shape {
+        display: none !important;
+    }
+
+    /* Make background white for printing */
+    body, section {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    /* Improve text readability */
+    h1, h2, h3, h4 {
+        color: #000000 !important;
+    }
+
+    /* Remove hero height restriction */
+    .hero {
+        height: auto !important;
+        padding: 40px 0;
+    }
+
+    /* Ensure content fits page width */
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
 
 
 </style
@@ -300,3 +370,4 @@ footer {
         loop: true
     });
 </script>
+
